@@ -3,6 +3,7 @@ from . import views
  
 app_name = 'app'
 urlpatterns = [
+    url('', views.IndexView.as_view(), name='index'),
     url('index/', views.IndexView.as_view(), name='index'),
 ]
 """
