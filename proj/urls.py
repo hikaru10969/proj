@@ -19,5 +19,5 @@ from django.conf.urls import include
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url('', include('app.urls'))
+    url('', include('app.urls', namespace = 'upload_form'))
 ]
