@@ -127,12 +127,3 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATIC_URL = '/input/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'input')]
 
-AWS_ACCESS_KEY_ID = 'AKIAQRUZASAOJFIHDP7Z'  
-AWS_SECRET_ACCESS_KEY = 'w/sPwtlEvh4WaqZGJnb7pY+MpyyPY/CKlyJkWaAZ'
-AWS_STORAGE_BUCKET_NAME = 'exampleread000-1'
-AWS_S3_REGION_NAME = 'ap-northeast-1'
-DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
-AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
-AWS_LOCATION = 'static'
-STATIC_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
-
